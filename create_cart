@@ -1,0 +1,8 @@
+Create table CART (
+  cart_ID varchar (20),
+  item_QTY int,
+  cost float,
+  purchase_ID varchar (20),
+  pro_ID varchar (20),
+  primary key(cart_ID),
+)

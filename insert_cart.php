@@ -1,23 +1,22 @@
-<html>
-<head>
 
-<h1> Insert Cart</h1>
+<?php
+// dbconnection for access
+include('dbconnection.php');
 
+//create the variables
 
+$cart_ID = $_POST['cart_ID'];
+$item_QTY = $_POST['item_QTY'];
+$cost = $_POST['cost'];
+$purchase_ID = $_POST['purchase_ID'];
+$pro_ID = $_POST['pro_ID'];
 
-</head>
+// The insert statement
 
-<body>
-<form name="form" action="insert.php" method="POST">
-<input name="cart_ID" title="fill in your cart_ID" type="text" id="cart_ID" placeholder="ID"><br><br>
-<input name="item_QTY" title="fill the quantity of items" type="number" id="item_QTY" placeholder="Quantity"><br><br>
-<input name="cost" title="fill in the item cost" type="number" id="cost" placeholder="Cost"><br><br>
-<input name="purchase_ID" title="fill in the purchase ID" type="text" id="purchase_ID" placeholder="Purchase ID"><br><br>
-<input name="pro_ID" title="fill in the product ID" type="text" id="pro_ID" placeholder="Product ID"><br><br>
-<input name="submit" type="submit" id="submit" value="Submit"><br><br>
+$sql = "INSERT INTO CART(cart_ID, item_QTY, cost, purchase_ID, pro_ID) VALUES('$cart_ID', '$item_QTY', '$cost', '$purchase_ID', '$pro_ID')";
 
+$connect->query($sql);
 
+header('location: index.php');
 
-</form>
-</body>
-</html>
+?>
