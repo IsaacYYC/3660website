@@ -1,2 +1,2 @@
 # 3660website
-By Issac, Jacob, Elian, Ayra
+By Issac, Jacob, Elian, Arya
