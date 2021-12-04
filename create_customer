@@ -1,0 +1,5 @@
+CREATE TABLE CUSTOMER(customer_id int(11) NOT NULL PRIMARY KEY, 
+password varchar(30), 
+fname varchar(30), 
+order_num int(30), email varchar(30), 
+phone varchar(35));
