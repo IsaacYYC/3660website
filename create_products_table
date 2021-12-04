@@ -1,0 +1,5 @@
+CREATE TABLE PRODUCTS(pro_Desc varchar(50), 
+proID int PRIMARY KEY NOT NULL, 
+pro_name varchar(30), 
+pro_price varchar(30), 
+Qty int);
