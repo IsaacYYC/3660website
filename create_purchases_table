@@ -1,0 +1,3 @@
+CREATE TABLE PURCHASES(purchase_ID int NOT NULL primary key, 
+amount int, 
+purchase_date DATE); 
