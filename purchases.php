@@ -13,7 +13,7 @@
   <td align="right">Purchase ID:</td><td><input type="text" id="purchase_ID" name="purchase_ID" placeholder="ID" size=20></td>
 </tr>
 <tr>
-  <td align="right">Amount:</td><td><input type="number" id="amount" name="amount" placeholder="Amount" size=20></td>
+  <td align="right">Amount: $</td><td><input type="number" min="0.01" step="0.01" id="amount" name="amount" placeholder="Amount" size=20></td>
 </tr>
 <tr>
   <td align="right">Purchase Date:</td><td><input type="date" id="purchase_date" placeholder="Date" name="purchase_date" size=20></td>
@@ -68,9 +68,10 @@ echo "<tr><td align=center>" . $row['purchase_ID']. "</td><td align=center>" . $
 }
 echo "</table>";
 }else{
- echo "0 results";
+ echo "No Records found";
 }
 ?>
+
 
 </body>
 </html>
